@@ -12,6 +12,9 @@
 
 .speach {
   font-size: 25px;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 25px;
 }
 
 .bowser {
