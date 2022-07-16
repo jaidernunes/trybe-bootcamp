@@ -1,0 +1,32 @@
+div:hover{
+    border: 5px solid black;
+}
+div{
+    width: 180px;
+    height: 60px;
+}
+h3{
+    text-align: center;
+}
+#primary-color{
+    background-color: blue;
+}
+#secondary-color{
+    background-color: orange;
+}
+#complementary-color{
+    background-color: yellow;
+}
+#dark-color{ 
+    background-color: #6e0707;
+}
+#bright-color{
+    background-color: fuchsia;
+}
+div:nth-child(5){
+    width: 200px;
+    height: 80px;
+}
+div:nth-child(odd){
+    font-style: italic;
+}
