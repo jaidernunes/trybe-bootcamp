@@ -1,0 +1,32 @@
+.img-width-adjust{
+    width: 100%;
+    max-width: 1182px;
+}
+.box1{
+    height: 600px;
+
+}
+#mantis-drawing{
+    float: left;
+}
+#scientific-classification-table{
+    margin-top: 10%;
+    margin-left: 10%;
+    border: 1px solid black;
+}
+th, tr{
+    border: 1px solid black;
+}
+.table-header{
+    text-align: center;
+}
+th{
+    align-items: center;
+    width: 100%;
+}
+p{
+    max-width: 900px;
+}
+#site-map{
+    display: inline;
+}
