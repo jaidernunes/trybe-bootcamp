@@ -1,0 +1,12 @@
+li{
+    display: inline;
+}
+.first{
+    display: block;
+    margin-left: 100px;
+    width: 200px;
+}
+.second, .third{
+    display: inline-block;
+    width: 200px;
+}

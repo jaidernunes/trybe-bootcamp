@@ -1,0 +1,16 @@
+body{
+    background-color: rgba(100, 201, 91, 0.959);
+}
+h1 , p{
+    text-align: center;
+}
+li:hover{
+    background-color: green;
+}
+li:active{
+    font-family: sans-serif;
+}
+ul , ol{
+    list-style: none;
+}
+
