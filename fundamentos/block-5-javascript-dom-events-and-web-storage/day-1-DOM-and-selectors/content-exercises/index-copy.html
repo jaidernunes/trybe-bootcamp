@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="paragraphs">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="paragraphs">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.querySelector("#paragraph");
+      paragraph.style.color = "red";
+
+      let title1 = document.querySelector('#page-title');
+      title1.innerText = 'Cloud Atlas'
+
+      let paragraph2 = document.querySelector('#second-paragraph');
+      paragraph2.innerText = 'Starring Tom Hanks!'
+
+      let subtitle1 = document.querySelector('#subtitle');
+      subtitle1.innerText = 'Greatest movie ever!'
+
+      let paragraphsQ = document.querySelector('.paragraphs');
+      paragraphsQ.style.fontSize = '60px';
+      
+      document.getElementsByTagName('h4')[0].style.color = 'blue';
+
+    </script>
+  </body>
+</html>
