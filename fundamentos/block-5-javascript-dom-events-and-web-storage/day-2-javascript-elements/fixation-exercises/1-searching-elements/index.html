@@ -19,6 +19,54 @@
       <section id="quartoEUltimoFilho"></section>
     </section>
     <script>
+      // Acesse o elemento elementoOndeVoceEsta.
+      let elementStart  = document.getElementById('elementoOndeVoceEsta');
+      
+      // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+      elementStart.parentNode.style.color = 'green';
+
+      // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?      
+      let firstSonOfSon = document.getElementById('primeiroFilhoDoFilho');
+      firstSonOfSon.innerText = 'FIRST SON OF SON'
+      
+      // Acesse o primeiroFilho a partir de pai.
+      let father = document.getElementById('pai');
+      let firstChild = father.firstElementChild;
+
+      // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+      let firstSibling = elementStart.previousElementSibling;
+
+      // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+      let attention = elementStart.nextSibling; 
+
+      // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+      let thrdSibling = elementStart.nextElementSibling; 
+
+      // Agora acesse o terceiroFilho a partir de pai.
+      thrdSibling2 = father.children[2]
+      
+      // Crie um irmão para elementoOndeVoceEsta.
+
+      let sibling1 = document.createElement('p');
+      sibling1.innerText = 'sibling1';
+      elementStart.parentElement.appendChild(sibling1);
+      
+      // Crie um filho para elementoOndeVoceEsta.
+
+
+      let sibling2 = document.createElement('p');
+      sibling2.innerText = 'sibling2';
+      elementStart.appendChild(sibling2);
+
+      // Crie um filho para primeiroFilhoDoFilho.
+
+      let sibling3 = document.createElement('p');
+      sibling3.innerText = 'sibling3';
+      firstSonOfSon.appendChild(sibling3)
+
+      // A partir desse filho criado, acesse terceiroFilho.
+
+      thrdSon2 = sibling3.parentElement.parentElement.nextElementSibling;
 
     </script>
   </main>
