@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+</head>
+<body>
+    <h1>TrybeTrip Contest</h1>
+    <form action="" method="post">
+        <main id="class-row">
+            <div class="form-block">    
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>    
+            <div class="form-block">    
+                <label for="email">Email</label>
+                <input type="text" required>
+            </div>    
+            <div class="form-block">
+                <fieldset>
+                    <legend>Your favorite destination:</legend>
+                    <input type="radio" name="city" id="city">
+                    <label for="beach">City</label>
+                    <input type="radio" name="countryside" id="countryside">
+                    <label for="beach">Countryside</label>
+                    <input type="radio" name="beach" id="beach">
+                    <label for="beach">Beach</label>
+                    <input type="radio" name="mountains" id="mountains">
+                    <label for="beach">Mountains</label>
+                </fieldset>    
+            </div>    
+            <br>
+            <label for="answer">Why should you be the developer to win the TrybeTrip contest?</label>
+            <div class="form-block"> 
+                <textarea name="answer" id="answer" cols="30" rows="10" maxlength="500" placeholder="Up to 500 characters."></textarea>
+            </div>
+            <div class="form-block">
+                <label for="date">What is the best date to make your trip?</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="form-block">
+                <input type="checkbox" name="agree1" id="agree1">
+                <label for="agree1">Would you like to receive other amazing oportunities offered by Trybe?</label>
+            </div>   
+            <div class="form-block">
+                <input type="checkbox" name="agree2" id="agree2">
+                <label for="agree2">I agree that images of my trip may be used to advertise future contests.</label>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </main>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
