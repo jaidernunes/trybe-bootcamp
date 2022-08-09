@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <form action="" method="post">
+        <main class="container">
+            <h1 class="mb-3">TrybeTrip Contest</h1>
+            <div class="container mb-1">    
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>    
+            
+            <div class="container mb-1">    
+                <label for="email">Email</label>
+                <input type="text" required>
+            </div>    
+
+            <div class="container">
+                <fieldset>
+                    <legend>Your favorite destination:</legend>
+                    <input class="form-check-input" type="radio" name="city" id="radio">
+                    <label for="beach">City</label>
+                    <input class="form-check-input" type="radio" name="city" id="countryside">
+                    <label for="beach">Countryside</label>
+                    <input class="form-check-input" type="radio" name="city" id="beach">
+                    <label for="beach">Beach</label>
+                    <input class="form-check-input" type="radio" name="city" id="mountains">
+                    <label for="beach">Mountains</label>
+                </fieldset>    
+            </div>    
+            <br>
+            <div class="container mb-1"> 
+                <label for="answer">Why should you be the developer to win the TrybeTrip contest?</label>
+                <textarea name="answer" id="answer" cols="30" rows="10" maxlength="500" placeholder="Up to 500 characters."></textarea>
+            </div>
+            <div class="container mb-1">
+                <label for="date">What is the best date to make your trip?</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="container">
+                <input type="checkbox" name="agree1" id="agree1">
+                <label for="agree1">Would you like to receive other amazing oportunities offered by Trybe?</label>
+            </div>   
+            <div class="container mb-2">
+                <input type="checkbox" name="agree2" id="agree2" required>
+                <label for="agree2">I agree that images of my trip may be used to advertise future contests.</label>
+            </div>
+            <div class="container">
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset">Clear</button>
+            </div>
+        </main>
+    </form>
+</body>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+<script src="script.js"></script>
+</html>
